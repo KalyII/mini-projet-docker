@@ -68,7 +68,7 @@ Voir les logs backend :docker logs -f paymybuddy-backend
 
 ## 📸 Capture d’écran – Interface de connexion
 
-![Login screenshot](./login-screenshot.png)
+![Login screenshot](login-screenshot.png)
 
 Cette interface permet aux utilisateurs de se connecter à Pay My Buddy pour gérer leurs transactions personnelles.
 
