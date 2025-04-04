@@ -70,5 +70,37 @@ Voir les logs backend :docker logs -f paymybuddy-backend
 
 ![Login screenshot](login-screenshot.png)
 
-Cette interface permet aux utilisateurs de se connecter à Pay My Buddy pour gérer leurs transactions personnelles.
+2. Compiler le projet (via Docker): docker run --rm -v "$PWD":/app -w /app maven:3.8.8-eclipse-temurin-17 mvn clean package
+
+5. Builder et tagger l’image backend:
+docker build -t paymybuddy-backend:v1 .
+docker tag paymybuddy-backend:v1 localhost:5000/paymybuddy-backend:v1
+ 
+4. Lancer le registre Docker privé:
+
+docker run -d -p 5000:5000 --name registry-kaly registry:2
+
+Pousser l’image dans le registre
+docker push localhost:5000/paymybuddy-backend:v1
+
+Docker Compose (backend + MySQL):docker-compose up -d
+
+test rapide sur le terminal :curl http://localhost:8080
+
+ Interface Docker Registry UI :
+docker run -d -p 8090:80 \
+  --name frontend-kaly \
+  --network paymy-net \
+  -e REGISTRY_URL=http://registry-kaly:5000 \
+  -e REGISTRY_TITLE="PayMyBuddy Registry" \
+  -e DELETE_IMAGES=true \
+  -e CATALOG_ELEMENTS_LIMIT=50 \
+  joxit/docker-registry-ui:1.5-static
+
+Ouvrir [Open Port 8090] dans DockerLabs pour voir les images
+
+
+
+
+
 
