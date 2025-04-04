@@ -11,8 +11,8 @@ com/paymybuddy/paymybuddy/repository/TransactionRepository.class
 com/paymybuddy/paymybuddy/service/TransactionService.class
 com/paymybuddy/paymybuddy/constants/Pagination.class
 com/paymybuddy/paymybuddy/model/viewmodel/TransactionViewModel.class
-com/paymybuddy/paymybuddy/exceptions/BuddyNotFoundException.class
 com/paymybuddy/paymybuddy/service/BankAccountService.class
+com/paymybuddy/paymybuddy/exceptions/BuddyNotFoundException.class
 com/paymybuddy/paymybuddy/controller/TransferController.class
 com/paymybuddy/paymybuddy/exceptions/BankAccountNotFoundException.class
 com/paymybuddy/paymybuddy/service/DBUserDetailsService.class
@@ -28,11 +28,11 @@ com/paymybuddy/paymybuddy/model/viewmodel/ConnectionViewModel.class
 com/paymybuddy/paymybuddy/controller/TransactionController.class
 com/paymybuddy/paymybuddy/config/ClockConfig.class
 com/paymybuddy/paymybuddy/service/PaginationService.class
-com/paymybuddy/paymybuddy/controller/ExceptionHandlerController.class
 com/paymybuddy/paymybuddy/controller/ProfileController.class
+com/paymybuddy/paymybuddy/controller/ExceptionHandlerController.class
 com/paymybuddy/paymybuddy/config/SecurityConfig.class
-com/paymybuddy/paymybuddy/repository/BankAccountRepository.class
 com/paymybuddy/paymybuddy/service/UserService.class
+com/paymybuddy/paymybuddy/repository/BankAccountRepository.class
 com/paymybuddy/paymybuddy/exceptions/NotAuthenticatedException.class
 com/paymybuddy/paymybuddy/exceptions/InsufficientBalanceException.class
 com/paymybuddy/paymybuddy/model/User.class
