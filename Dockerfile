@@ -1,4 +1,3 @@
-# Utilise une image légère et performante pour Java 17
 FROM amazoncorretto:17-alpine
 
 # Définit le dossier de travail dans le conteneur
